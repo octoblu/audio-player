@@ -1,6 +1,7 @@
 _ = require 'lodash'
 React = require 'react'
 Howl = require('howler').Howl
+meshbluConfig = require ''
 Meshblu = require 'meshblu'
 MessageSchema =
   type : 'object'
@@ -31,7 +32,8 @@ Player = React.createClass
   componentDidMount: ->
     @connection.on 'message', (message) =>
       console.log 'message', message
-      @playAudio(message.payload.audioUrl)
+      audioUrl = message.payload.audioUrl || message.audioUrl
+      @playAudio(audioUrl)
 
   playAudio:  (audioUrl) =>
     console.log 'Play ', audioUrl
