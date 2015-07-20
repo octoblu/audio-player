@@ -1,7 +1,6 @@
 _ = require 'lodash'
 React = require 'react'
 Howl = require('howler').Howl
-meshbluConfig = require ''
 Meshblu = require 'meshblu'
 MessageSchema =
   type : 'object'
