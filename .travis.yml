@@ -3,6 +3,7 @@ deploy:
   matrix:
   - provider: s3
     access_key_id: AKIAJH2D5IPIRHYJT5IA
+    local_dir: site
     secret_access_key:
       secure: kYYVyjmx7d5JI7MMPWeVtFaa/DYOYWt4T0XKENW7RBik0jlpAyq7ux9OqieBufXak29LdWI7sSdB8Y/QrJEBwNB4RWXwySenwW2VApYnbjPNJboAqhTwKYUvRReZCmuUvhs3fcMwP6Xqy05nkOW20kkZDV62b0C6V4iirAsIvlkubwZCFod+vWCX8krc6eDQjQy/1kN/b+NMKo8YGWEidw4QvI4LuXeUD3DyzaEOGvuXSAfxBEyiP6mf+gU8223BncR4ga0duUaG4Kp7hcVUGiwYUNXes5SKJ0hnfEtyAfwp7X6yiLbe0LyQMfFei6H8AAYtyNng0ZW9FlZeJCzO5GaktcAsJO97/pvOA2qjyRtNQZ+uj5sfGh/f4e8zW6+usqGh8lV83vPnh0Klh5neWEgEnvw8jkNO/s5vjMMvfNuPfHbAD7dFezTWJlBTeWgzZvk5EpAg+O50chMKVHi4ICdz47kICRh5I6gXMigeI+7gEO4BRaPrKp/8AVKN7O3YUjBGg9HeLIwggB3F/AlFm8KqO7f4W6t6VlXJ7amuGV5mIVyRMTDNbAQRFsVR47PGMLZ1M/idyyWJBBPDOLIZVkdR5uuu8HE57SKijtBkpgXrkgbMit8xhtmLn0XlpoEgUMAMBqNuibWvpoloM1oMPydMCqWUw/b87JYO/Y1NzBQ=
     bucket: audioplayer.octoblu.com
