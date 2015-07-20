@@ -41,7 +41,9 @@ Player = React.createClass
       urls: [audioUrl]
       volume: 1.0
       buffer: true
-      autoplay: true
+      autoplay: false
+      onload: =>
+        @sound.play()
 
   render: ->
     <div>
