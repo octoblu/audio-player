@@ -1,0 +1,70 @@
+.board-container {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #3d3d3d;
+  margin: auto;
+  background-color: #3d3d3d;
+  padding: 100px 50px 100px 50px;
+}
+.board {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-line-pack: start;
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-flex-flow: row-wrap nowrap;
+  -moz-flex-flow: row-wrap nowrap;
+  -ms-flex-flow: row-wrap nowrap;
+  flex-flow: row-wrap nowrap;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #E9EAEE;
+  margin: 25px auto;
+  background-color: #E9EAEE;
+  padding: 50px 50px 50px 50px;
+}
+.pad {
+  width: 300px;
+  height: 300px;
+  background-color: #FFF;
+  margin: 15px 10px 15px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.button {
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  padding: 15px 50px;
+  display: inline-block;
+  background: transparent;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.board__logo {
+  width: 150px;
+  height: auto;
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Audio-Player-kit",
+  "version": "1.0.0",
+  "description": "Simple web application that plays an audio.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/octoblu/drum-kit.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/drum-kit/issues"
+  },
+  "homepage": "https://github.com/octoblu/drum-kit",
+  "dependencies": {
+    "coffee-script": "^1.9.2",
+    "howler": "^1.1.26",
+    "lodash": "^3.7.0",
+    "meshblu": "^1.22.0",
+    "node-uuid": "^1.4.3",
+    "react": "^0.13.2",
+    "react-router": "^0.13.3",
+    "superagent": "^1.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.6.7",
+    "chai": "^2.3.0",
+    "cjsx-loader": "^2.0.1",
+    "coffee-loader": "^0.7.2",
+    "gulp": "^3.8.11",
+    "gulp-autowatch": "^1.0.2",
+    "gulp-less": "^3.0.3",
+    "gulp-util": "^3.0.4",
+    "gulp-webserver": "^0.9.0",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0",
+    "webpack": "^1.8.11"
+  }
+}
