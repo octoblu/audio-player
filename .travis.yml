@@ -1,15 +1,13 @@
 language: shell
 deploy:
-  matrix:
-  - provider: s3
-    access_key_id: AKIAJH2D5IPIRHYJT5IA
-    local_dir: site
-    secret_access_key:
-      secure: kYYVyjmx7d5JI7MMPWeVtFaa/DYOYWt4T0XKENW7RBik0jlpAyq7ux9OqieBufXak29LdWI7sSdB8Y/QrJEBwNB4RWXwySenwW2VApYnbjPNJboAqhTwKYUvRReZCmuUvhs3fcMwP6Xqy05nkOW20kkZDV62b0C6V4iirAsIvlkubwZCFod+vWCX8krc6eDQjQy/1kN/b+NMKo8YGWEidw4QvI4LuXeUD3DyzaEOGvuXSAfxBEyiP6mf+gU8223BncR4ga0duUaG4Kp7hcVUGiwYUNXes5SKJ0hnfEtyAfwp7X6yiLbe0LyQMfFei6H8AAYtyNng0ZW9FlZeJCzO5GaktcAsJO97/pvOA2qjyRtNQZ+uj5sfGh/f4e8zW6+usqGh8lV83vPnh0Klh5neWEgEnvw8jkNO/s5vjMMvfNuPfHbAD7dFezTWJlBTeWgzZvk5EpAg+O50chMKVHi4ICdz47kICRh5I6gXMigeI+7gEO4BRaPrKp/8AVKN7O3YUjBGg9HeLIwggB3F/AlFm8KqO7f4W6t6VlXJ7amuGV5mIVyRMTDNbAQRFsVR47PGMLZ1M/idyyWJBBPDOLIZVkdR5uuu8HE57SKijtBkpgXrkgbMit8xhtmLn0XlpoEgUMAMBqNuibWvpoloM1oMPydMCqWUw/b87JYO/Y1NzBQ=
-    bucket: audioplayer.octoblu.com
-    endpoint: audioplayer.octoblu.com.s3-website-us-west-1.amazonaws.com
-    region: us-west-1
-    on:
-      branch: master
+  provider: s3
+  access_key_id: AKIAJH2D5IPIRHYJT5IA
   secret_access_key:
-    secure: Ux6ZikQLmdsN/n3tGt+cI4HGlRfJcDyVfr5AtH+FUo5JMCR86JJZxIcKypHfeXmyADiw9ENXYL4/AlccE4q3tUPxZyAa9/8klvlcVw4eGQvfozY1PPy46SGSOfAiDCSdbrAbBlZIBC9XYtLayynwgWf/9uXzO7TKckb/lrmnT+WRpGTEMb3PyXk4+4JcEhmo1J563NXA2Xy/GLxrlzUXiwdX25776Hy7KTDONEeRopN59Wd6H8pc/9tQKPARq8NQaNA5pqa6x8kWc6Qic5X23yn/TBwti2H+Wdtv3rpaehHi3B4KsXMY20s4ZT24QNaVlUKkg5a41pK3qqPZqvmLvndJk2KPaxYZ//kUjiDSCTHWlanuLc/tf4BKlLVDPihR5FNU+gAf0ZEreUPOmj+FTf1pw2E7FjgczPtcPT7i77Gf0g8BQmOzzQSkNO1U0v37oUkSgOyq+1sGrEH2Duzf5IyydZCUN4rYZCmdA+n7aXvD3wEGw5kqf95lYSfRFtZsIV85lhz9XDeCFdYZgIz2ruVlohPg1yqtwZ2cRHU/oIKzC1iEhHAwGh4VcXdEGq2TBTvbCib4xxzvNrz0Pmq2eAHg6UjrnYCGH0dsRVb45X6kgLXSwa5HM/CwVwKRZuMihtTm+ElI6qNLLXmFLdjY1eK50tE1F2fpcVNd+0+cnN8=
+    secure: D207JBtKM2JsP0ROZ9Fm5etM4uCjg/tbfVPBVEuGnk8DS6gNkUj7G+s7J0oKsw5CFzWI3d8P0Rp2to7grD/VGhZA4XvB6eRFeAaAsc2nylRxyNFj2RjGS3f+Q4N+m2xbxJSr4G9y605VD8+R8Nw8x4VC2e6mJ+HRo+RbhvPULFQhVjlcj7eNiXXtgevyK5/AGwLfHTHh2GWjhdctHeGj6lN2ih6iRg3MGlgcUDLCx9Cq1BfoLbnA5hD8IBYU5VZGjpRk9THFtIfjJ3vK1nONl+ckLIyk4Ljpbp07TUEy0sHnGWVkXjjeXO4TNak1MVA+l6SK4aJdkR5zYNqIY+MY2aCJhpZ86sH5PMdrE/XVBziH+9rr3DbPHxoSxobhpVxGh3MhMz/UGvJM6JiXCvAueMkDRt6Z7j/G6JL1HNNaTfCO2fFPRYkpZN9Hj0ClpheREdkF6NHZKVuw0E10ENX+oI9+ZL9qYTqZ4iyUP0lhKTXEkUEOPdO9y6J0iupmTV4qnq3zxlcwRG8wUkQ9ffEq4ksMg5OWpRGHKsXNz6j2cHLmlioF8GHLAG7Gwwzga5bNXvoSdhSMmZvEQZID6G035gSGFmtQwpoAjj/SKIs30CCCVBrQ9/zXglKAGR7qpC96RglS9NluO3LA7oJwrJ1tw/VSiQAB6bUFrgRDqSR8Xt8=
+  bucket: audioplayer.octoblu.com
+  local-dir: public
+  endpoint: audioplayer.octoblu.com.s3-website-us-west-1.amazonaws.com
+  region: us-west-1
+  acl: public_read
+  on:
+    repo: octoblu/audio-player
