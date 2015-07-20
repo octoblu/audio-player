@@ -1,14 +1,13 @@
 language: shell
 deploy:
-  matrix:
-  - provider: s3
-    access_key_id: AKIAJH2D5IPIRHYJT5IA
-    local_dir: site
-    secret_access_key:
-      secure: &1
-    bucket: audioplayer.octoblu.com
-    endpoint: audioplayer.octoblu.com.s3-website-us-west-1.amazonaws.com
-    region: us-west-1
+  provider: s3
+  access_key_id: AKIAJH2D5IPIRHYJT5IA
+  local_dir: site
+  secret_access_key:
+    secure: &1
+  bucket: audioplayer.octoblu.com
+  endpoint: audioplayer.octoblu.com.s3-website-us-west-1.amazonaws.com
+  region: us-west-1
     on:
       branch: master
   secret_access_key:
