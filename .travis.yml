@@ -1,6 +1,5 @@
 language: shell
 deploy:
-  matrix:
   - provider: s3
     access_key_id: AKIAJH2D5IPIRHYJT5IA
     local_dir: site
@@ -11,5 +10,4 @@ deploy:
     region: us-west-1
     on:
       branch: master
-  secret_access_key:
-    secure: Ux6ZikQLmdsN/n3tGt+cI4HGlRfJcDyVfr5AtH+FUo5JMCR86JJZxIcKypHfeXmyADiw9ENXYL4/AlccE4q3tUPxZyAa9/8klvlcVw4eGQvfozY1PPy46SGSOfAiDCSdbrAbBlZIBC9XYtLayynwgWf/9uXzO7TKckb/lrmnT+WRpGTEMb3PyXk4+4JcEhmo1J563NXA2Xy/GLxrlzUXiwdX25776Hy7KTDONEeRopN59Wd6H8pc/9tQKPARq8NQaNA5pqa6x8kWc6Qic5X23yn/TBwti2H+Wdtv3rpaehHi3B4KsXMY20s4ZT24QNaVlUKkg5a41pK3qqPZqvmLvndJk2KPaxYZ//kUjiDSCTHWlanuLc/tf4BKlLVDPihR5FNU+gAf0ZEreUPOmj+FTf1pw2E7FjgczPtcPT7i77Gf0g8BQmOzzQSkNO1U0v37oUkSgOyq+1sGrEH2Duzf5IyydZCUN4rYZCmdA+n7aXvD3wEGw5kqf95lYSfRFtZsIV85lhz9XDeCFdYZgIz2ruVlohPg1yqtwZ2cRHU/oIKzC1iEhHAwGh4VcXdEGq2TBTvbCib4xxzvNrz0Pmq2eAHg6UjrnYCGH0dsRVb45X6kgLXSwa5HM/CwVwKRZuMihtTm+ElI6qNLLXmFLdjY1eK50tE1F2fpcVNd+0+cnN8=
+  
