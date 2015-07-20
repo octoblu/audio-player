@@ -31,7 +31,7 @@ Player = React.createClass
   componentDidMount: ->
     @connection.on 'message', (message) =>
       console.log 'message', message
-      audioUrl = message.payload?.audioUrl || message.audioUrl?
+      audioUrl =  if message.payload? then message.payload.audioUrl else message.audioUrl
       @playAudio(audioUrl)
 
   playAudio:  (audioUrl) =>
