@@ -36,6 +36,7 @@ Player = React.createClass
 
   playAudio:  (audioUrl) =>
     console.log 'Play ', audioUrl
+    @sound.stop() if @sound
     @sound = new Howl
       urls: [audioUrl]
       volume: 1.0
