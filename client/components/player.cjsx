@@ -1,6 +1,7 @@
 _ = require 'lodash'
 React = require 'react'
-Howl = require('howler').Howl
+Howler = require 'howler'
+Howl = Howler.Howl
 Meshblu = require 'meshblu'
 MessageSchema =
   type : 'object'
@@ -36,10 +37,12 @@ Player = React.createClass
 
   playAudio:  (audioUrl) =>
     console.log 'Play ', audioUrl
-    @sound.stop() if @sound
+    @sound = @sound.stop() if @sound
     @sound = new Howl
       urls: [audioUrl]
       volume: 1.0
+      sprite :
+        key : [0, 2000, false]
       buffer: true
       autoplay: false
       onload: =>
